@@ -1,0 +1,295 @@
+﻿.sign-in-button {
+    margin-top: -57px;
+}
+
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  #api {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  #api h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #api .entry-item {
+    position: relative;
+  }
+  
+  #api .entry-item input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  #api .entry-item label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  #api .entry-item input:focus ~ label,
+  #api .entry-item input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  #api form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  #api a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  #api a span {
+    position: absolute;
+    display: block;
+  }
+  
+  #api a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  #api a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  #api a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  #api a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+  
+#api {
+    color: #fff;
+    width: 600px;
+}
+#api .social {
+    display: table-footer-group;
+    position: relative;
+    top: 1px;
+    width: auto;
+}
+#api h2 {
+    font-size: 24;
+    font-weight: 300;
+}
+
+#api .divider {
+    display: none;
+}
+
+#api .intro {
+    display: block;
+    text-align: left;
+}
+
+#api {
+    display: table;
+    margin: 50px;
+    width: 600px;
+}
+
+.accountButton {
+    min-width: 50px;
+    background-repeat: no-repeat;
+    padding: 0 10px;
+    border: none;
+    color: #FFF;
+    margin-left: 0;
+    margin-right: 2px;
+    transition: background-color 1s ease 0s;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    text-align: center;
+    word-wrap: break-word;
+    height: 41px;
+    width: 315px;
+    padding-left: 22px;
+    background-color: #505050;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+#GitHubExchange {
+    background-image: url(//ustproduction.blob.core.windows.net/ignite-tour2018/site_banner/GitHub-Mark.png);
+    background-size: 21px auto;
+    background-color: #505050;
+    background-position: 12px 10px;
+}
+
+#MicrosoftAccountExchange, #Microsoftemployee, #Microsoft, #MSDNAzureAD, #AzureADExchange {
+    background-image: url(//ustproduction.blob.core.windows.net/tech-summit-fy17/MSSymbol_21.png);
+    background-size: 21px auto;
+    background-color: #2f2f2f;
+    background-position: 12px 10px;
+}
+
+#api .localAccount .entry .entry-item {
+    position: relative;
+    width: 85%;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+#api .localAccount .entry .entry-item #password {
+    margin-bottom: 20px;
+}
+
+#api .localAccount .entry .entry-item .password-label #forgotPassword {
+    position: absolute;
+    bottom: 0;
+    clear: right;
+    cursor: pointer;
+    float: right;
+    text-align: right;
+    color: #fff
+}
+
+#api .localAccount .entry .entry-item label {
+    display: none;
+}
+
+#next {
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    background-color: #086e78;
+    text-transform: uppercase;
+    color: #FFF;
+    min-height: 45px;
+    line-height: 40px;
+    vertical-align: top;
+    padding: 12px 12px;
+    outline: 0;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 120px;
+    text-indent: 0px;
+    text-shadow: none;
+    font: 400 13.3333px Arial;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    box-sizing: border-box;
+    border-radius: 7px
+}
